@@ -1,0 +1,132 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Museum Concept — Responsive Project</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <h1>Art & Archive</h1>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Collections</a>
+        <a href="#" class="nav-link">Exhibitions</a>
+        <a href="#" class="nav-link">Visit</a>
+        <a href="#" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2 class="eyebrow">Curated Collection</h2>
+          <h3 class="hero-title">Discover classical paintings and historic portraits</h3>
+          <p class="hero-desc">A museum-like layout with card panels, muted palette, and soft rounded corners — designed responsively for desktop, tablet and mobile.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#">Get Started</a>
+            <a class="btn ghost" href="#">Explore Collection</a>
+          </div>
+        </div>
+
+        <div class="hero-cards">
+          <article class="art-card large">
+            <img src="https://source.unsplash.com/800x900/?museum,painting,art" alt="Painting" loading="lazy">
+            <div class="card-body">
+              <h4>Street in Old Town</h4>
+              <p class="muted">Oil on canvas — 1843</p>
+              <a class="card-cta" href="#">Get Started →</a>
+            </div>
+          </article>
+
+          <div class="stack">
+            <article class="art-card">
+              <img src="https://source.unsplash.com/600x400/?portrait,painting" alt="Portrait" loading="lazy">
+              <div class="card-body">
+                <h4>Portrait</h4>
+                <p class="muted">Unknown artist</p>
+                <a class="card-cta" href="#">Get Started →</a>
+              </div>
+            </article>
+
+            <article class="art-card">
+              <img src="https://source.unsplash.com/600x400/?vintage,painting" alt="Vintage painting" loading="lazy">
+              <div class="card-body">
+                <h4>Vintage Painting</h4>
+                <p class="muted">European school</p>
+                <a class="card-cta" href="#">Get Started →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <div class="container">
+        <h3 class="section-title">Featured Works</h3>
+
+        <div class="cards-grid">
+          <article class="art-card">
+            <img src="https://source.unsplash.com/600x400/?art,painting,canvas" alt="Artwork" loading="lazy">
+            <div class="card-body">
+              <h4>Portrait Study</h4>
+              <p class="muted">Gallery piece</p>
+              <a class="card-cta" href="#">Get Started →</a>
+            </div>
+          </article>
+
+          <article class="art-card">
+            <img src="https://source.unsplash.com/600x400/?archaeology,museum" alt="Artwork" loading="lazy">
+            <div class="card-body">
+              <h4>Town Landscape</h4>
+              <p class="muted">19th century</p>
+              <a class="card-cta" href="#">Get Started →</a>
+            </div>
+          </article>
+
+          <article class="art-card">
+            <img src="https://source.unsplash.com/600x400/?antique,portrait" alt="Artwork" loading="lazy">
+            <div class="card-body">
+              <h4>Classic Portrait</h4>
+              <p class="muted">Private collection</p>
+              <a class="card-cta" href="#">Get Started →</a>
+            </div>
+          </article>
+
+          <article class="art-card">
+            <img src="https://source.unsplash.com/600x400/?painting,canvas,oil" alt="Artwork" loading="lazy">
+            <div class="card-body">
+              <h4>Still Life</h4>
+              <p class="muted">Study & detail</p>
+              <a class="card-cta" href="#">Get Started →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Art & Archive — Design test project</p>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
